@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    border: 1px solid white;
+}
+.wrapper{
+    width: 100%;
+    height: 650px;
+display: flex;
+align-items: center;
+justify-content: center;
+background-image: linear-gradient(45deg,#3e32a8,#e310c7);
+}
+.temp{
+width: 50%;
+height: 400px;
+text-align: center;
+color: white;
+border-radius: 10px;
+box-shadow:5px 5px #c8f2f4;
+ border: 5px solid transparent;
+ transition: border 0.5s ease;
+ /* Add the pulsing animation to the border */
+ animation: border-pulse 2s ease-in-out infinite;
+
+}
+/* Define the pulsing animation */
+@keyframes border-pulse {
+ 0% {
+    border-color: #3e32a8;
+ }
+ 50% {
+    border-color: #333;
+ }
+ 100% {
+    border-color: #e310c7;
+ }
+}
+h1{
+    font-family: "Protest Guerrilla", sans-serif;
+font-weight: 400;
+font-style: normal;
+margin: 30px;
+}
+h2,h3{
+    font-family: sans-serif;
+}
+button{
+width: 100px;
+height: 50px;
+border-radius: 20px;
+border:none;
+background-color: white;
+}
+button:hover{
+background-color: blue;
+color: white;
+}
+input{
+width: 200px;
+height: 20px;
+background:transparent;
+border: 2px solid #ccc;
+color: white;
+}
+#unit{
+color: white;
+background:transparent;
+font-size: 30px;
+border: none;
+}
+option{
+background: #3e32a8;
+font-size: 20px;
+}
